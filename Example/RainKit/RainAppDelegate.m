@@ -7,12 +7,18 @@
 //
 
 #import "RainAppDelegate.h"
+#import "RainViewController.h"
 
 @implementation RainAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:[RainViewController new]];
+    self.window.rootViewController  = nvc;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

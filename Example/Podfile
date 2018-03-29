@@ -2,7 +2,10 @@ use_frameworks!
 
 target 'RainKit_Example' do
   pod 'RainKit', :path => '../'
-
+  
+     pod 'SDWebImage', '~> 4.2.3'
+     pod 'Masonry', '~> 1.1.0'
+        pod 'YYModel', '~> 1.0.4'
   target 'RainKit_Tests' do
     inherit! :search_paths
 

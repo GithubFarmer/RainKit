@@ -15,5 +15,8 @@ Pod::Spec.new do |s|
   s.author           = { '喻永权' => 'rainy.yu@wwwarehouse.com' }
   s.source           = { :git => 'https://github.com/喻永权/RainKit.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-  s.source_files = 'RainKit/Classes/**/*'
+  s.source_files = 'RainKit/Classes/**/*.{h,m}'
+    s.dependency "Masonry"
+    s.dependency  "SDWebImage"
+   s.dependency  "YYModel"
 end

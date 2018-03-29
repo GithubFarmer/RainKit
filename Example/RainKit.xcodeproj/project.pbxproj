@@ -23,6 +23,8 @@
 		6402154229D6C49D284D14B8 /* Pods_RainKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9FD4EB5CF0C49D70F01AE7 /* Pods_RainKit_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		AE8AF4192051119F00FD1B8E /* RainKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE8AF4182051119F00FD1B8E /* RainKit.plist */; };
+		AE9A7E4C2069F3BF008DF406 /* RainModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7E4B2069F3BF008DF406 /* RainModelViewController.m */; };
 		F7C27AE7015D699348219676 /* Pods_RainKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25562630156B088BED90373B /* Pods_RainKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,9 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06E44A9ED4E6FE5881DB8001 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		06E44A9ED4E6FE5881DB8001 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		25562630156B088BED90373B /* Pods_RainKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3043AD3D7DF01CF2FEE3D747 /* RainKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RainKit.podspec; path = ../RainKit.podspec; sourceTree = "<group>"; };
+		3043AD3D7DF01CF2FEE3D747 /* RainKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RainKit.podspec; path = ../RainKit.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* RainKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,7 +66,10 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9238B98455AE7CEB4C600F40 /* Pods-RainKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainKit_Example/Pods-RainKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AC482F1CA5BC09F5C3FE9BDE /* Pods-RainKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainKit_Tests/Pods-RainKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B2D1B66D76E0C5806F239743 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AE8AF4182051119F00FD1B8E /* RainKit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RainKit.plist; sourceTree = "<group>"; };
+		AE9A7E4A2069F3BF008DF406 /* RainModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainModelViewController.h; sourceTree = "<group>"; };
+		AE9A7E4B2069F3BF008DF406 /* RainModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainModelViewController.m; sourceTree = "<group>"; };
+		B2D1B66D76E0C5806F239743 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B9EABD6CB6D9C7F07DFD9E07 /* Pods-RainKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainKit_Example/Pods-RainKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DE9FD4EB5CF0C49D70F01AE7 /* Pods_RainKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -148,6 +153,9 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* RainViewController.h */,
 				6003F5A6195388D20070C39A /* RainViewController.m */,
+				AE9A7E4A2069F3BF008DF406 /* RainModelViewController.h */,
+				AE9A7E4B2069F3BF008DF406 /* RainModelViewController.m */,
+				AE8AF4182051119F00FD1B8E /* RainKit.plist */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -250,6 +258,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "喻永权";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = XDK267KQ83;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -279,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE8AF4192051119F00FD1B8E /* RainKit.plist in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -352,11 +365,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RainKit_Example/Pods-RainKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/RainKit/RainKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RainKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -405,6 +424,7 @@
 			files = (
 				6003F59E195388D20070C39A /* RainAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RainViewController.m in Sources */,
+				AE9A7E4C2069F3BF008DF406 /* RainModelViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,12 +553,16 @@
 			baseConfigurationReference = 9238B98455AE7CEB4C600F40 /* Pods-RainKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = XDK267KQ83;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RainKit/RainKit-Prefix.pch";
 				INFOPLIST_FILE = "RainKit/RainKit-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "37b78e25-3b21-4b47-8563-a9f9467efc39";
+				PROVISIONING_PROFILE_SPECIFIER = "AppStoreDevelopment *";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -548,12 +572,15 @@
 			baseConfigurationReference = B9EABD6CB6D9C7F07DFD9E07 /* Pods-RainKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RainKit/RainKit-Prefix.pch";
 				INFOPLIST_FILE = "RainKit/RainKit-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
