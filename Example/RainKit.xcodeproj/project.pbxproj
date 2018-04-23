@@ -23,7 +23,13 @@
 		6402154229D6C49D284D14B8 /* Pods_RainKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9FD4EB5CF0C49D70F01AE7 /* Pods_RainKit_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		AE4E82BC2086E5A2007EB816 /* NSString+RainKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4E82BB2086E5A2007EB816 /* NSString+RainKit.m */; };
+		AE4E82BF20871638007EB816 /* RainSingleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4E82BE20871638007EB816 /* RainSingleView.m */; };
+		AE6B174F2089E38B005DC65E /* RainCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B174E2089E38B005DC65E /* RainCenterViewController.m */; };
+		AE6B17522089E396005DC65E /* RainLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B17512089E396005DC65E /* RainLeftViewController.m */; };
 		AE8AF4192051119F00FD1B8E /* RainKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE8AF4182051119F00FD1B8E /* RainKit.plist */; };
+		AE95EAF82080ABF20065A6D9 /* SADevice.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95EAF62080ABF10065A6D9 /* SADevice.m */; };
+		AE95EAFB2080AECB0065A6D9 /* SAWifiHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95EAFA2080AECB0065A6D9 /* SAWifiHelper.m */; };
 		AE9A7E4C2069F3BF008DF406 /* RainModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7E4B2069F3BF008DF406 /* RainModelViewController.m */; };
 		F7C27AE7015D699348219676 /* Pods_RainKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25562630156B088BED90373B /* Pods_RainKit_Example.framework */; };
 /* End PBXBuildFile section */
@@ -66,7 +72,19 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9238B98455AE7CEB4C600F40 /* Pods-RainKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainKit_Example/Pods-RainKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AC482F1CA5BC09F5C3FE9BDE /* Pods-RainKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainKit_Tests/Pods-RainKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE4E82BA2086E5A2007EB816 /* NSString+RainKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+RainKit.h"; sourceTree = "<group>"; };
+		AE4E82BB2086E5A2007EB816 /* NSString+RainKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+RainKit.m"; sourceTree = "<group>"; };
+		AE4E82BD20871638007EB816 /* RainSingleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainSingleView.h; sourceTree = "<group>"; };
+		AE4E82BE20871638007EB816 /* RainSingleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainSingleView.m; sourceTree = "<group>"; };
+		AE6B174D2089E38B005DC65E /* RainCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainCenterViewController.h; sourceTree = "<group>"; };
+		AE6B174E2089E38B005DC65E /* RainCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainCenterViewController.m; sourceTree = "<group>"; };
+		AE6B17502089E396005DC65E /* RainLeftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainLeftViewController.h; sourceTree = "<group>"; };
+		AE6B17512089E396005DC65E /* RainLeftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainLeftViewController.m; sourceTree = "<group>"; };
 		AE8AF4182051119F00FD1B8E /* RainKit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RainKit.plist; sourceTree = "<group>"; };
+		AE95EAF62080ABF10065A6D9 /* SADevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SADevice.m; sourceTree = "<group>"; };
+		AE95EAF72080ABF10065A6D9 /* SADevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SADevice.h; sourceTree = "<group>"; };
+		AE95EAF92080AECB0065A6D9 /* SAWifiHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAWifiHelper.h; sourceTree = "<group>"; };
+		AE95EAFA2080AECB0065A6D9 /* SAWifiHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAWifiHelper.m; sourceTree = "<group>"; };
 		AE9A7E4A2069F3BF008DF406 /* RainModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainModelViewController.h; sourceTree = "<group>"; };
 		AE9A7E4B2069F3BF008DF406 /* RainModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainModelViewController.m; sourceTree = "<group>"; };
 		B2D1B66D76E0C5806F239743 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -151,10 +169,22 @@
 				6003F59C195388D20070C39A /* RainAppDelegate.h */,
 				6003F59D195388D20070C39A /* RainAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				AE95EAF92080AECB0065A6D9 /* SAWifiHelper.h */,
+				AE95EAFA2080AECB0065A6D9 /* SAWifiHelper.m */,
 				6003F5A5195388D20070C39A /* RainViewController.h */,
 				6003F5A6195388D20070C39A /* RainViewController.m */,
+				AE95EAF72080ABF10065A6D9 /* SADevice.h */,
+				AE95EAF62080ABF10065A6D9 /* SADevice.m */,
+				AE4E82BA2086E5A2007EB816 /* NSString+RainKit.h */,
+				AE4E82BB2086E5A2007EB816 /* NSString+RainKit.m */,
+				AE4E82BD20871638007EB816 /* RainSingleView.h */,
+				AE4E82BE20871638007EB816 /* RainSingleView.m */,
 				AE9A7E4A2069F3BF008DF406 /* RainModelViewController.h */,
 				AE9A7E4B2069F3BF008DF406 /* RainModelViewController.m */,
+				AE6B174D2089E38B005DC65E /* RainCenterViewController.h */,
+				AE6B174E2089E38B005DC65E /* RainCenterViewController.m */,
+				AE6B17502089E396005DC65E /* RainLeftViewController.h */,
+				AE6B17512089E396005DC65E /* RainLeftViewController.m */,
 				AE8AF4182051119F00FD1B8E /* RainKit.plist */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -365,6 +395,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RainKit_Example/Pods-RainKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/RainKit/RainKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -372,6 +406,10 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDrawerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RainKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -422,10 +460,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE95EAFB2080AECB0065A6D9 /* SAWifiHelper.m in Sources */,
 				6003F59E195388D20070C39A /* RainAppDelegate.m in Sources */,
+				AE4E82BF20871638007EB816 /* RainSingleView.m in Sources */,
 				6003F5A7195388D20070C39A /* RainViewController.m in Sources */,
 				AE9A7E4C2069F3BF008DF406 /* RainModelViewController.m in Sources */,
+				AE6B174F2089E38B005DC65E /* RainCenterViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				AE6B17522089E396005DC65E /* RainLeftViewController.m in Sources */,
+				AE4E82BC2086E5A2007EB816 /* NSString+RainKit.m in Sources */,
+				AE95EAF82080ABF20065A6D9 /* SADevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

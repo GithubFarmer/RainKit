@@ -11,6 +11,7 @@
 
 @synthesize personIntroduce = _personIntroduce;
 
+
 + (NSDictionary<NSString *,id> *)modelCustomPropertyMapper{
     return @{
              @"classID":@"class"
@@ -22,6 +23,10 @@
 
     self.name = @"Bobby";
     self.personIntroduce = @"我是一年级三班的小明";
+    self.name = @"daa";
+    self.name = @"fda";
+    self.age = 13;
+    self.address = @"";
 }
 
 - (instancetype)init{
@@ -30,6 +35,5 @@
     }
     return self;
 }
-
 
 @end

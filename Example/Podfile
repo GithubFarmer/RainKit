@@ -1,11 +1,17 @@
 use_frameworks!
 
+
+inhibit_all_warnings!
 target 'RainKit_Example' do
   pod 'RainKit', :path => '../'
   
+     pod 'MMDrawerController'
      pod 'SDWebImage', '~> 4.2.3'
      pod 'Masonry', '~> 1.1.0'
-        pod 'YYModel', '~> 1.0.4'
+     pod 'YYModel', '~> 1.0.4'
+     pod 'AFNetworking'
+     pod 'Aspects', '~> 1.4.1'
+     pod 'IQKeyboardManager'
   target 'RainKit_Tests' do
     inherit! :search_paths
 

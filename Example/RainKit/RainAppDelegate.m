@@ -8,7 +8,9 @@
 
 #import "RainAppDelegate.h"
 #import "RainViewController.h"
-
+#import "RainCenterViewController.h"
+#import "RainLeftViewController.h"
+#import <MMDrawerController/MMDrawerController.h>
 @implementation RainAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,10 +18,36 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:[RainViewController new]];
-    self.window.rootViewController  = nvc;
+   
+    
+//    UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:[RainViewController new]];
+//    self.window.rootViewController  = nvc;
+    [self setUpRootViewController];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+
+
+- (void)setUpRootViewController{
+    
+    RainCenterViewController *centerVC = [RainCenterViewController new];
+    UINavigationController *nvc1 = [[UINavigationController alloc]initWithRootViewController:centerVC];
+    
+    RainLeftViewController *leftVC = [RainLeftViewController new];
+    UINavigationController *nvc2 = [[UINavigationController alloc]initWithRootViewController:leftVC];
+
+    UITabBarController *tabbarVC = [[UITabBarController alloc]init];
+    tabbarVC.viewControllers = @[nvc1,nvc2];
+    
+    MMDrawerController *drawVC = [[MMDrawerController alloc]initWithCenterViewController:centerVC leftDrawerViewController:leftVC];
+    
+    [drawVC setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+        
+    }];
+    
+    self.window.rootViewController = drawVC;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
