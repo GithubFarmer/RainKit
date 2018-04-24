@@ -20,9 +20,9 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
    
     
-//    UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:[RainViewController new]];
-//    self.window.rootViewController  = nvc;
-    [self setUpRootViewController];
+    UINavigationController *nvc = [[UINavigationController alloc]initWithRootViewController:[RainViewController new]];
+    self.window.rootViewController  = nvc;
+//    [self setUpRootViewController];
     [self.window makeKeyAndVisible];
     return YES;
 }

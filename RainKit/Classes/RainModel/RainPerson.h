@@ -26,11 +26,25 @@
 
 @end
 
+@interface RainObject : NSObject
 
+@property (nonatomic, copy) NSString *pName;
+@property (nonatomic, assign) NSInteger pAge;
+
+@end
+
+
+/**
+ YYModel的运用
+ */
 @interface RainPerson : NSObject<YYModel,RainPerson,RainModelProtocol>
 
 @property (nonatomic, copy) NSString *name;
 
 @property (nonatomic, copy) NSString *classID;
 
+@property (nonatomic, copy) NSArray <RainObject *> *personArray;
+
 @end
+
+

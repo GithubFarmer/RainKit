@@ -11,10 +11,18 @@
 
 @synthesize personIntroduce = _personIntroduce;
 
-
+//给定义的model属性进行重命名
 + (NSDictionary<NSString *,id> *)modelCustomPropertyMapper{
     return @{
              @"classID":@"class"
+             };
+}
+
+//集合对象数组需要实现的协议
++ (NSDictionary<NSString *,id> *)modelContainerPropertyGenericClass{
+    
+    return @{
+             @"personArray":[RainObject class]
              };
 }
 
@@ -25,8 +33,8 @@
     self.personIntroduce = @"我是一年级三班的小明";
     self.name = @"daa";
     self.name = @"fda";
-    self.age = 13;
-    self.address = @"";
+//    self.age = 13;
+//    self.address = @"";
 }
 
 - (instancetype)init{
@@ -35,5 +43,11 @@
     }
     return self;
 }
+
+@end
+
+
+@implementation RainObject
+
 
 @end

@@ -30,6 +30,8 @@
 
 #import "RainSingleView.h"
 
+#import <RainKit/RainHeader.h>
+
 @interface RainModelViewController ()
 
 @property (nonatomic, strong)dispatch_source_t timer;
@@ -68,7 +70,27 @@
                                                          @"age":@"25"
                                                          }];
     
+    UIButton *btn = [[UIButton  alloc]initWithFrame:CGRectMake(50, 100, 80, 40)];
+    btn.backgroundColor = [UIColor redColor];
+    [btn setTitle:@"截屏" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(cutScreen) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
 }
+
+- (void)cutScreen{
+
+    UIImage *cutImage = [self.view imageCutScreen];
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(50, 160, 200, 200)];
+    imageView.center = self.view.center;
+    imageView.image = cutImage;
+    //加实线框
+//    [imageView addLine:[UIColor blackColor] lineWidth:0.5f];
+    //加虚线框
+    [imageView addDashLine:[UIColor blackColor] lineWidth:1 cornerRad:10];
+    [self.view addSubview:imageView];
+}
+
 
 - (void)action1:(NSDictionary *)dict{
     NSLog(@"%@",dict);
@@ -77,12 +99,8 @@
 //使用分类方法
 - (void)sa_categoryMethod{
     
-    
-    
+
 }
-
-
-
 
 - (void)sa_appConfig_networkChangeNotification {
     
