@@ -42,6 +42,13 @@ typedef NS_OPTIONS(NSUInteger, RainRectCorner){
 
 
 /**
+ 指定一个view，对其进行旋转操作
+ */
+- (void)startRotation;
+
+
+
+/**
  给指定的view添加边线
 
  @param lineColor 线条颜色

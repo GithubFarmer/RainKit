@@ -85,6 +85,17 @@ static char const *KDashLineLayer = "Rain.dashLineLayer";
                                                            cornerRadius:rad].CGPath;
 }
 
+- (void)startRotation{
+    
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"transform.rotation.z";
+    animation.toValue = [NSNumber numberWithFloat:M_PI*2.0];
+    animation.duration = 2.5;
+    animation.cumulative = YES;
+    animation.repeatCount = MAXFLOAT;
+    [self.layer addAnimation:animation forKey:@"rotation"];
+}
+
 - (void)setDashBorderLayer:(CAShapeLayer *)dashBorderLayer{
     objc_setAssociatedObject(self, KDashLineLayer, dashBorderLayer, OBJC_ASSOCIATION_RETAIN);
 }

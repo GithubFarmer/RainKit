@@ -12,6 +12,8 @@ target 'RainKit_Example' do
      pod 'AFNetworking'
      pod 'Aspects', '~> 1.4.1'
      pod 'IQKeyboardManager'
+     pod 'WHKit'
+     pod 'Aspects', '~> 1.4.1'
   target 'RainKit_Tests' do
     inherit! :search_paths
 

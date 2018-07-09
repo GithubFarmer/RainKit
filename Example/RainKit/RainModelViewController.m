@@ -32,7 +32,7 @@
 
 #import <RainKit/RainHeader.h>
 
-@interface RainModelViewController ()
+@interface RainModelViewController ()<UIContentContainer>
 
 @property (nonatomic, strong)dispatch_source_t timer;
 
@@ -41,6 +41,10 @@
 
 @implementation RainModelViewController{
     NSInteger time;
+}
+
+- (void)preferredContentSizeDidChangeForChildContentContainer:(id<UIContentContainer>)container{
+    
 }
 
 - (void)viewDidLoad {
@@ -69,7 +73,7 @@
     [self performSelector:@selector(action1:) withObject:@{@"name":@"name" ,
                                                          @"age":@"25"
                                                          }];
-    
+//    UIContentContainer
     UIButton *btn = [[UIButton  alloc]initWithFrame:CGRectMake(50, 100, 80, 40)];
     btn.backgroundColor = [UIColor redColor];
     [btn setTitle:@"截屏" forState:UIControlStateNormal];
@@ -89,6 +93,7 @@
     //加虚线框
     [imageView addDashLine:[UIColor blackColor] lineWidth:1 cornerRad:10];
     [self.view addSubview:imageView];
+    [imageView startRotation];
 }
 
 

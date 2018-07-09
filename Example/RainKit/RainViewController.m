@@ -9,7 +9,7 @@
 #import "RainViewController.h"
 #import <Masonry/Masonry.h>
 #import <YYModel/YYModel.h>
-
+#import "UIViewController+RainNav.h"
 
 @interface RainViewController ()<UITableViewDelegate,UITableViewDataSource,YYModel>
 
@@ -33,6 +33,8 @@
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(0);
     }];
+    
+//    CAGradientLayer *gradientLayer = [CAGradientLayer layer];//梯度图层
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -42,6 +44,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
     cell.textLabel.text = [_array[indexPath.row] objectForKey:@"className"];
     return cell;
 }
@@ -51,7 +54,13 @@
     NSDictionary *dict = _array[indexPath.row];
     UIViewController *vc = [[NSClassFromString(dict[@"classVC"]) alloc]init];
     vc.view.backgroundColor = [UIColor whiteColor];
-    [self.navigationController pushViewController:vc animated:YES];
+    if([dict[@"classVC"] isEqualToString:@"RainHoriViewController"]){
+        UINavigationController *hNvc = [vc getNavForPresented];
+        hNvc.title = vc.title;
+        [self presentViewController:hNvc animated:NO completion:nil];
+    }else{
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 

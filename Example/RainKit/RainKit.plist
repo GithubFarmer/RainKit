@@ -4,9 +4,21 @@
 <array>
 	<dict>
 		<key>className</key>
-		<string>123</string>
+		<string>小例子</string>
 		<key>classVC</key>
 		<string>RainModelViewController</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>masonry的运用</string>
+		<key>classVC</key>
+		<string>RainMasonryViewController</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>横屏</string>
+		<key>classVC</key>
+		<string>RainHoriViewController</string>
 	</dict>
 </array>
 </plist>

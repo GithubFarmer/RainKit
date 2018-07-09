@@ -13,6 +13,11 @@
 - (instancetype)initWithFrame:(CGRect)frame name:(NSString *)name{
     if(self = [super initWithFrame:frame]){
         name = @"123";
+        
+        
+        
+        
+        
     }
     return self;
 }

@@ -21,6 +21,7 @@
 @interface RainPhotoRecycle : UIView
 
 @property (nonatomic, copy) NSArray <NSString *> *imageUrls;
+
 @property (nonatomic, assign) NSTimeInterval intervalTime;
 
 @property (nonatomic, weak) id<RainPhotoRecycleDelegate> delegate;
