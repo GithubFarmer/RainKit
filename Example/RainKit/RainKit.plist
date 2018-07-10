@@ -20,5 +20,11 @@
 		<key>classVC</key>
 		<string>RainHoriViewController</string>
 	</dict>
+	<dict>
+		<key>className</key>
+		<string>RainServiceTestProtocol</string>
+		<key>classVC</key>
+		<string>RainProtocolTestViewController</string>
+	</dict>
 </array>
 </plist>

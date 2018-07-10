@@ -10,7 +10,7 @@
 
 @protocol RainViewConfigProtocol <NSObject>
 
-
+@optional
 /**
 是否是全屏显示
 

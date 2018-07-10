@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RainBaseViewController.h"
 
 @interface UIViewController (RainNav)
 
-- (UINavigationController *)getNavForPresented;
+
+- (RainBaseViewController *)getNavForPresented;
+
+@property (nonatomic, strong) UIBarButtonItem *backItem;
+
+@property (nonatomic, strong) NSArray <UIBarButtonItem *>*leftBarButtonItems;  
 
 @end

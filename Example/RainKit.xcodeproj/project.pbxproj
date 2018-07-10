@@ -25,6 +25,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		AE4E82BC2086E5A2007EB816 /* NSString+RainKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4E82BB2086E5A2007EB816 /* NSString+RainKit.m */; };
 		AE4E82BF20871638007EB816 /* RainSingleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4E82BE20871638007EB816 /* RainSingleView.m */; };
+		AE5EF9D620F47480008A1D06 /* RainProtocolTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5EF9D520F47480008A1D06 /* RainProtocolTestViewController.m */; };
 		AE65BBB820AEA89E0050CFE1 /* RainMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE65BBB720AEA89E0050CFE1 /* RainMasonryViewController.m */; };
 		AE6B174F2089E38B005DC65E /* RainCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B174E2089E38B005DC65E /* RainCenterViewController.m */; };
 		AE6B17522089E396005DC65E /* RainLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B17512089E396005DC65E /* RainLeftViewController.m */; };
@@ -36,6 +37,7 @@
 		AEA4D28220F2FCFE007A96AC /* RainViewControllerIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA4D28120F2FCFE007A96AC /* RainViewControllerIntercepter.m */; };
 		AEA4D28520F30F2D007A96AC /* UIViewController+RainRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA4D28420F30F2D007A96AC /* UIViewController+RainRotation.m */; };
 		AEA4D28820F350D4007A96AC /* UIViewController+RainNav.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA4D28720F350D4007A96AC /* UIViewController+RainNav.m */; };
+		AEA4D28B20F354CA007A96AC /* RainBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA4D28A20F354CA007A96AC /* RainBaseViewController.m */; };
 		F7C27AE7015D699348219676 /* Pods_RainKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25562630156B088BED90373B /* Pods_RainKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,8 @@
 		AE4E82BB2086E5A2007EB816 /* NSString+RainKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+RainKit.m"; sourceTree = "<group>"; };
 		AE4E82BD20871638007EB816 /* RainSingleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainSingleView.h; sourceTree = "<group>"; };
 		AE4E82BE20871638007EB816 /* RainSingleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainSingleView.m; sourceTree = "<group>"; };
+		AE5EF9D420F47480008A1D06 /* RainProtocolTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainProtocolTestViewController.h; sourceTree = "<group>"; };
+		AE5EF9D520F47480008A1D06 /* RainProtocolTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainProtocolTestViewController.m; sourceTree = "<group>"; };
 		AE65BBB620AEA89E0050CFE1 /* RainMasonryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainMasonryViewController.h; sourceTree = "<group>"; };
 		AE65BBB720AEA89E0050CFE1 /* RainMasonryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainMasonryViewController.m; sourceTree = "<group>"; };
 		AE6B174D2089E38B005DC65E /* RainCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainCenterViewController.h; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 		AEA4D28420F30F2D007A96AC /* UIViewController+RainRotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RainRotation.m"; sourceTree = "<group>"; };
 		AEA4D28620F350D4007A96AC /* UIViewController+RainNav.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RainNav.h"; sourceTree = "<group>"; };
 		AEA4D28720F350D4007A96AC /* UIViewController+RainNav.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RainNav.m"; sourceTree = "<group>"; };
+		AEA4D28920F354C9007A96AC /* RainBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainBaseViewController.h; sourceTree = "<group>"; };
+		AEA4D28A20F354CA007A96AC /* RainBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainBaseViewController.m; sourceTree = "<group>"; };
 		B2D1B66D76E0C5806F239743 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B9EABD6CB6D9C7F07DFD9E07 /* Pods-RainKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainKit_Example/Pods-RainKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DE9FD4EB5CF0C49D70F01AE7 /* Pods_RainKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +195,10 @@
 				AE95EAFA2080AECB0065A6D9 /* SAWifiHelper.m */,
 				6003F5A5195388D20070C39A /* RainViewController.h */,
 				6003F5A6195388D20070C39A /* RainViewController.m */,
+				AEA4D28920F354C9007A96AC /* RainBaseViewController.h */,
+				AEA4D28A20F354CA007A96AC /* RainBaseViewController.m */,
+				AE5EF9D420F47480008A1D06 /* RainProtocolTestViewController.h */,
+				AE5EF9D520F47480008A1D06 /* RainProtocolTestViewController.m */,
 				AE95EAF72080ABF10065A6D9 /* SADevice.h */,
 				AE95EAF62080ABF10065A6D9 /* SADevice.m */,
 				AE4E82BA2086E5A2007EB816 /* NSString+RainKit.h */,
@@ -496,8 +506,10 @@
 				6003F5A7195388D20070C39A /* RainViewController.m in Sources */,
 				AE9A7E4C2069F3BF008DF406 /* RainModelViewController.m in Sources */,
 				AEA4D28820F350D4007A96AC /* UIViewController+RainNav.m in Sources */,
+				AEA4D28B20F354CA007A96AC /* RainBaseViewController.m in Sources */,
 				AE6B174F2089E38B005DC65E /* RainCenterViewController.m in Sources */,
 				AEA4D27B20F2F0BB007A96AC /* RainHoriViewController.m in Sources */,
+				AE5EF9D620F47480008A1D06 /* RainProtocolTestViewController.m in Sources */,
 				AE65BBB820AEA89E0050CFE1 /* RainMasonryViewController.m in Sources */,
 				AEA4D28220F2FCFE007A96AC /* RainViewControllerIntercepter.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

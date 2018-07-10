@@ -10,6 +10,7 @@
 #import "RainViewConfigProtocol.h"
 #import "UIViewController+RainRotation.h"
 
+
 @interface RainHoriViewController ()<RainViewConfigProtocol>
 
 @end
@@ -19,12 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"横屏界面";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 - (BOOL)isFullScreenMode{
     return YES;

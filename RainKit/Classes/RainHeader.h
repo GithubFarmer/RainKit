@@ -17,4 +17,6 @@
 
 #import "RainPictureBlurManager.h"
 
+#import "RainServiceTestProtocol.h"
+
 #endif /* RainHeader_h */

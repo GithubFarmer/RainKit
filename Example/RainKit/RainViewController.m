@@ -10,6 +10,9 @@
 #import <Masonry/Masonry.h>
 #import <YYModel/YYModel.h>
 #import "UIViewController+RainNav.h"
+#import <RainKit/RainServiceManager.h>
+#import <RainKit/RainHeader.h>
+#import <RainKit/RainServiceTestProtocol.h>
 
 @interface RainViewController ()<UITableViewDelegate,UITableViewDataSource,YYModel>
 
@@ -44,7 +47,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    
     cell.textLabel.text = [_array[indexPath.row] objectForKey:@"className"];
     return cell;
 }
@@ -54,8 +56,13 @@
     NSDictionary *dict = _array[indexPath.row];
     UIViewController *vc = [[NSClassFromString(dict[@"classVC"]) alloc]init];
     vc.view.backgroundColor = [UIColor whiteColor];
-    if([dict[@"classVC"] isEqualToString:@"RainHoriViewController"]){
-        UINavigationController *hNvc = [vc getNavForPresented];
+    if([dict[@"className"] containsString:@"Protocol"]){
+        
+        UIViewController<RainServiceTestProtocol> *protocolVC = [RainServiceManager createServiceWithProtocol:@protocol(RainServiceTestProtocol)];
+        [self.navigationController pushViewController:protocolVC animated:YES];
+    
+    }else if([dict[@"classVC"] isEqualToString:@"RainHoriViewController"]){
+        RainBaseViewController *hNvc = [vc getNavForPresented];
         hNvc.title = vc.title;
         [self presentViewController:hNvc animated:NO completion:nil];
     }else{
