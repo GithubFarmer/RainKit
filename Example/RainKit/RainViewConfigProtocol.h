@@ -20,4 +20,6 @@
 
 - (BOOL)isLandScape;
 
+- (UIColor *)naviBarColor;
+
 @end

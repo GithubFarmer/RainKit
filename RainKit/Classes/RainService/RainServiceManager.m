@@ -22,7 +22,7 @@
 
 @implementation RainServiceManager
 
-+ (id)shareInstance{
++ (instancetype)shareInstance{
     static RainServiceManager *router = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

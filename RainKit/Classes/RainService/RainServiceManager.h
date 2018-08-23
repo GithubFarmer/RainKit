@@ -9,7 +9,7 @@
 
 @interface RainServiceManager : NSObject
 
-+ (id)shareInstance;
++ (instancetype)shareInstance;
 
 + (id _Nullable)createServiceWithProtocol:(Protocol *_Nonnull)protocol;
 

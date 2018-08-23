@@ -17,7 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-     self.view.backgroundColor = [UIColor yellowColor];
+     self.title = self.navigationController.title;
+     self.view.backgroundColor = [UIColor colorWithRed:arc4random()%255/225.0 green:arc4random()%255/225.0 blue:arc4random()%255/225.0 alpha:1];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning {

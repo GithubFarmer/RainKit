@@ -23,8 +23,13 @@
 		6402154229D6C49D284D14B8 /* Pods_RainKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9FD4EB5CF0C49D70F01AE7 /* Pods_RainKit_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		AE4AD77F212CF12600699E37 /* RainLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD77E212CF12600699E37 /* RainLoginViewController.m */; };
+		AE4AD782212CF13A00699E37 /* RainLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD781212CF13A00699E37 /* RainLoginView.m */; };
+		AE4AD785212D5CE500699E37 /* RainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD784212D5CE500699E37 /* RainTabBar.m */; };
+		AE4AD788212D615D00699E37 /* RainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4AD787212D615D00699E37 /* RainTabBarController.m */; };
 		AE4E82BC2086E5A2007EB816 /* NSString+RainKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4E82BB2086E5A2007EB816 /* NSString+RainKit.m */; };
 		AE4E82BF20871638007EB816 /* RainSingleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4E82BE20871638007EB816 /* RainSingleView.m */; };
+		AE53AF0321198CFF004450E7 /* RainStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE53AF0221198CFF004450E7 /* RainStackViewController.m */; };
 		AE5EF9D620F47480008A1D06 /* RainProtocolTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5EF9D520F47480008A1D06 /* RainProtocolTestViewController.m */; };
 		AE65BBB820AEA89E0050CFE1 /* RainMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE65BBB720AEA89E0050CFE1 /* RainMasonryViewController.m */; };
 		AE6B174F2089E38B005DC65E /* RainCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B174E2089E38B005DC65E /* RainCenterViewController.m */; };
@@ -79,10 +84,20 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9238B98455AE7CEB4C600F40 /* Pods-RainKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainKit_Example/Pods-RainKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AC482F1CA5BC09F5C3FE9BDE /* Pods-RainKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainKit_Tests/Pods-RainKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE4AD77D212CF12600699E37 /* RainLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainLoginViewController.h; sourceTree = "<group>"; };
+		AE4AD77E212CF12600699E37 /* RainLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainLoginViewController.m; sourceTree = "<group>"; };
+		AE4AD780212CF13A00699E37 /* RainLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainLoginView.h; sourceTree = "<group>"; };
+		AE4AD781212CF13A00699E37 /* RainLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainLoginView.m; sourceTree = "<group>"; };
+		AE4AD783212D5CE500699E37 /* RainTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainTabBar.h; sourceTree = "<group>"; };
+		AE4AD784212D5CE500699E37 /* RainTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainTabBar.m; sourceTree = "<group>"; };
+		AE4AD786212D615D00699E37 /* RainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainTabBarController.h; sourceTree = "<group>"; };
+		AE4AD787212D615D00699E37 /* RainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainTabBarController.m; sourceTree = "<group>"; };
 		AE4E82BA2086E5A2007EB816 /* NSString+RainKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+RainKit.h"; sourceTree = "<group>"; };
 		AE4E82BB2086E5A2007EB816 /* NSString+RainKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+RainKit.m"; sourceTree = "<group>"; };
 		AE4E82BD20871638007EB816 /* RainSingleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainSingleView.h; sourceTree = "<group>"; };
 		AE4E82BE20871638007EB816 /* RainSingleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainSingleView.m; sourceTree = "<group>"; };
+		AE53AF0121198CFF004450E7 /* RainStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainStackViewController.h; sourceTree = "<group>"; };
+		AE53AF0221198CFF004450E7 /* RainStackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainStackViewController.m; sourceTree = "<group>"; };
 		AE5EF9D420F47480008A1D06 /* RainProtocolTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainProtocolTestViewController.h; sourceTree = "<group>"; };
 		AE5EF9D520F47480008A1D06 /* RainProtocolTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainProtocolTestViewController.m; sourceTree = "<group>"; };
 		AE65BBB620AEA89E0050CFE1 /* RainMasonryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainMasonryViewController.h; sourceTree = "<group>"; };
@@ -222,6 +237,16 @@
 				AE6B174E2089E38B005DC65E /* RainCenterViewController.m */,
 				AE6B17502089E396005DC65E /* RainLeftViewController.h */,
 				AE6B17512089E396005DC65E /* RainLeftViewController.m */,
+				AE53AF0121198CFF004450E7 /* RainStackViewController.h */,
+				AE53AF0221198CFF004450E7 /* RainStackViewController.m */,
+				AE4AD780212CF13A00699E37 /* RainLoginView.h */,
+				AE4AD781212CF13A00699E37 /* RainLoginView.m */,
+				AE4AD783212D5CE500699E37 /* RainTabBar.h */,
+				AE4AD784212D5CE500699E37 /* RainTabBar.m */,
+				AE4AD786212D615D00699E37 /* RainTabBarController.h */,
+				AE4AD787212D615D00699E37 /* RainTabBarController.m */,
+				AE4AD77D212CF12600699E37 /* RainLoginViewController.h */,
+				AE4AD77E212CF12600699E37 /* RainLoginViewController.m */,
 				AE8AF4182051119F00FD1B8E /* RainKit.plist */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -503,11 +528,14 @@
 				AE95EAFB2080AECB0065A6D9 /* SAWifiHelper.m in Sources */,
 				6003F59E195388D20070C39A /* RainAppDelegate.m in Sources */,
 				AE4E82BF20871638007EB816 /* RainSingleView.m in Sources */,
+				AE4AD782212CF13A00699E37 /* RainLoginView.m in Sources */,
 				6003F5A7195388D20070C39A /* RainViewController.m in Sources */,
 				AE9A7E4C2069F3BF008DF406 /* RainModelViewController.m in Sources */,
 				AEA4D28820F350D4007A96AC /* UIViewController+RainNav.m in Sources */,
+				AE4AD77F212CF12600699E37 /* RainLoginViewController.m in Sources */,
 				AEA4D28B20F354CA007A96AC /* RainBaseViewController.m in Sources */,
 				AE6B174F2089E38B005DC65E /* RainCenterViewController.m in Sources */,
+				AE4AD785212D5CE500699E37 /* RainTabBar.m in Sources */,
 				AEA4D27B20F2F0BB007A96AC /* RainHoriViewController.m in Sources */,
 				AE5EF9D620F47480008A1D06 /* RainProtocolTestViewController.m in Sources */,
 				AE65BBB820AEA89E0050CFE1 /* RainMasonryViewController.m in Sources */,
@@ -515,7 +543,9 @@
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				AE6B17522089E396005DC65E /* RainLeftViewController.m in Sources */,
 				AE4E82BC2086E5A2007EB816 /* NSString+RainKit.m in Sources */,
+				AE4AD788212D615D00699E37 /* RainTabBarController.m in Sources */,
 				AE95EAF82080ABF20065A6D9 /* SADevice.m in Sources */,
+				AE53AF0321198CFF004450E7 /* RainStackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

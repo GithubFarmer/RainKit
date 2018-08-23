@@ -13,8 +13,12 @@
 #import <RainKit/RainServiceManager.h>
 #import <RainKit/RainHeader.h>
 #import <RainKit/RainServiceTestProtocol.h>
+#import "RainViewConfigProtocol.h"
+#import "RainCenterViewController.h"
+#import "RainLeftViewController.h"
+#import "RainTabBarController.h"
 
-@interface RainViewController ()<UITableViewDelegate,UITableViewDataSource,YYModel>
+@interface RainViewController ()<UITableViewDelegate,UITableViewDataSource,YYModel,RainViewConfigProtocol>
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -55,7 +59,7 @@
     
     NSDictionary *dict = _array[indexPath.row];
     UIViewController *vc = [[NSClassFromString(dict[@"classVC"]) alloc]init];
-    vc.view.backgroundColor = [UIColor whiteColor];
+//    vc.view.backgroundColor = [UIColor whiteColor];
     if([dict[@"className"] containsString:@"Protocol"]){
         
         UIViewController<RainServiceTestProtocol> *protocolVC = [RainServiceManager createServiceWithProtocol:@protocol(RainServiceTestProtocol)];
@@ -64,10 +68,42 @@
     }else if([dict[@"classVC"] isEqualToString:@"RainHoriViewController"]){
         RainBaseViewController *hNvc = [vc getNavForPresented];
         hNvc.title = vc.title;
-        [self presentViewController:hNvc animated:NO completion:nil];
+//        [self presentViewController:hNvc animated:NO completion:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([dict[@"className"] isEqualToString:@"tabbar"]){
+        [self presentViewController:[self setUpRootViewController] animated:YES completion:NULL];
     }else{
+        vc.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:vc animated:YES];
     }
+}
+
+
+- (RainTabBarController *)setUpRootViewController{
+    
+    RainCenterViewController *centerVC = [RainCenterViewController new];
+    UINavigationController *nvc1 = [[UINavigationController alloc]initWithRootViewController:centerVC];
+    nvc1.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
+    //    nvc1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_home"];
+    nvc1.title = @"家庭";
+    RainLeftViewController *leftVC = [RainLeftViewController new];
+    UINavigationController *nvc2 = [[UINavigationController alloc]initWithRootViewController:leftVC];
+    nvc2.tabBarItem.image  = [UIImage imageNamed:@"tabbar_message_center"];
+    nvc2.title = @"信心";
+    RainLeftViewController *leftVC1 = [RainLeftViewController new];
+    UINavigationController *nvc3 = [[UINavigationController alloc]initWithRootViewController:leftVC1];
+    nvc3.tabBarItem.image  = [UIImage imageNamed:@"tabbar_discover"];
+    nvc3.title = @"发现";
+    RainLeftViewController *leftVC2 = [RainLeftViewController new];
+    UINavigationController *nvc4 = [[UINavigationController alloc]initWithRootViewController:leftVC2];
+    nvc4.tabBarItem.image  = [UIImage imageNamed:@"tabbar_profile"];
+    nvc4.title = @"提升";
+    RainTabBarController *tabVC = [RainTabBarController new];
+    tabVC.viewControllers = @[nvc1,nvc2,nvc3,nvc4];
+    [tabVC setPlusBlock:^{
+        NSLog(@"123");
+    }];
+    return tabVC;
 }
 
 

@@ -21,6 +21,7 @@
         if(@available (iOS 11.0, *)){
             [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-100, 0) forBarMetrics:UIBarMetricsDefault];
         }else{
+            //取消系统自带的返回字样 UIOffsetMake（x，y） x代表的是：横向的数值    y代表的是：纵向的数值
             [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
         }
     }

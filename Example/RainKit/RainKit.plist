@@ -26,5 +26,23 @@
 		<key>classVC</key>
 		<string>RainProtocolTestViewController</string>
 	</dict>
+	<dict>
+		<key>className</key>
+		<string>UIStackView的学习</string>
+		<key>classVC</key>
+		<string>RainStackViewController</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>测试LoginView</string>
+		<key>classVC</key>
+		<string>RainLoginViewController</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>tabbar</string>
+		<key>classVC</key>
+		<string>RainLoginViewController</string>
+	</dict>
 </array>
 </plist>

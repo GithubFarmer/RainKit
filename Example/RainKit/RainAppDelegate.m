@@ -11,6 +11,9 @@
 #import "RainCenterViewController.h"
 #import "RainLeftViewController.h"
 #import <MMDrawerController/MMDrawerController.h>
+#import "RainTabBarController.h"
+
+
 @implementation RainAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -33,22 +36,41 @@
     
     RainCenterViewController *centerVC = [RainCenterViewController new];
     UINavigationController *nvc1 = [[UINavigationController alloc]initWithRootViewController:centerVC];
-    
+    nvc1.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
+//    nvc1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_home"];
+    nvc1.title = @"家庭";
     RainLeftViewController *leftVC = [RainLeftViewController new];
-    UINavigationController *nvc2 = [[UINavigationController alloc]initWithRootViewController:leftVC];
-
-    UITabBarController *tabbarVC = [[UITabBarController alloc]init];
-    tabbarVC.viewControllers = @[nvc1,nvc2];
+     UINavigationController *nvc2 = [[UINavigationController alloc]initWithRootViewController:leftVC];
+    nvc2.tabBarItem.image  = [UIImage imageNamed:@"tabbar_message_center"];
+    nvc2.title = @"信心";
+     RainLeftViewController *leftVC1 = [RainLeftViewController new];
+     UINavigationController *nvc3 = [[UINavigationController alloc]initWithRootViewController:leftVC1];
+    nvc3.tabBarItem.image  = [UIImage imageNamed:@"tabbar_discover"];
+    nvc3.title = @"发现";
+     RainLeftViewController *leftVC2 = [RainLeftViewController new];
+     UINavigationController *nvc4 = [[UINavigationController alloc]initWithRootViewController:leftVC2];
+    nvc4.tabBarItem.image  = [UIImage imageNamed:@"tabbar_profile"];
+    nvc4.title = @"提升";
     
-    MMDrawerController *drawVC = [[MMDrawerController alloc]initWithCenterViewController:centerVC leftDrawerViewController:leftVC];
     
-    [drawVC setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
-        
+//    UITabBarController *tabbarVC = [[UITabBarController alloc]init];
+//    tabbarVC.viewControllers = @[nvc1,nvc2];
+    
+//    MMDrawerController *drawVC = [[MMDrawerController alloc]initWithCenterViewController:centerVC leftDrawerViewController:leftVC];
+//
+//    [drawVC setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+//
+//    }];
+    RainTabBarController *tabVC = [RainTabBarController new];
+    tabVC.viewControllers = @[nvc1,nvc2,nvc3,nvc4];
+    [tabVC setPlusBlock:^{
+        NSLog(@"123");
     }];
-    
-    self.window.rootViewController = drawVC;
+    self.window.rootViewController = tabVC;
     
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

@@ -7,8 +7,9 @@
 //
 
 #import "RainCenterViewController.h"
+#import "RainViewConfigProtocol.h"
 
-@interface RainCenterViewController ()
+@interface RainCenterViewController ()<RainViewConfigProtocol>
 
 @end
 

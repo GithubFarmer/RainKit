@@ -51,14 +51,37 @@
         }else{
             viewController.edgesForExtendedLayout = UIRectEdgeBottom | UIRectEdgeRight | UIRectEdgeLeft;
         }
+    }else{
+        viewController.edgesForExtendedLayout = UIRectEdgeBottom | UIRectEdgeRight | UIRectEdgeLeft;
     }
     if([viewController respondsToSelector:@selector(isLandScape)]){
         islandScape = [(UIViewController <RainViewConfigProtocol> *)viewController isLandScape];
     }
-    viewController.view.backgroundColor = islandScape ? [UIColor yellowColor] : [UIColor redColor];
+    viewController.view.backgroundColor = islandScape ? [UIColor yellowColor] : [UIColor whiteColor];
     viewController.extendedLayoutIncludesOpaqueBars = YES;
     viewController.modalPresentationCapturesStatusBarAppearance = NO;
     viewController.automaticallyAdjustsScrollViewInsets = NO;
+    UIView *lineView = [self findHairlineImageViewUnder:viewController.navigationController.navigationBar];
+    lineView.hidden = YES;
+    UIColor *color = [UIColor whiteColor];
+    if([viewController respondsToSelector:@selector(naviBarColor)]){
+        color =  [(UIViewController <RainViewConfigProtocol> *)viewController naviBarColor];
+    }
+    viewController.navigationController.navigationBar.barTintColor = color;
+    [viewController.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName: [UIFont systemFontOfSize:20]}];
+}
+
++ (UIImageView *)findHairlineImageViewUnder:(UIView *)view {
+    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
+        return (UIImageView *)view;
+    }
+    for (UIView *subview in view.subviews) {
+        UIImageView *imageView = [self findHairlineImageViewUnder:subview];
+        if (imageView) {
+            return imageView;
+        }
+    }
+    return nil;
 }
 
 
