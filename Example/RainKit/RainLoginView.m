@@ -21,6 +21,7 @@
 @implementation RainLoginView
 {
     UIButton *rightBtn;
+    UILabel *titleLab;
 }
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
@@ -31,7 +32,7 @@
 
 -(void)initLogin{
     
-    UILabel *titleLab = [[UILabel alloc] init];
+    titleLab = [[UILabel alloc] init];
     titleLab.text = @"登录";
     titleLab.textAlignment = NSTextAlignmentCenter;
     titleLab.font = [UIFont systemFontOfSize:20];
@@ -211,12 +212,44 @@
 //    [self.viewController dismissViewControllerAnimated:YES completion:^{
 //        
 //    }];
+    NSLog(@"点到了");
 }
 
 //获取验证码
 -(void)vercodeAction{
     
     
+}
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    if(!self.isUserInteractionEnabled || self.isHidden || self.alpha <= 0.01){
+        return nil;
+    }
+    if([self pointInside:point withEvent:event]){
+        for(UIView *view in [self.subviews reverseObjectEnumerator]){
+            CGPoint point1 = [view convertPoint:point fromView:self];
+            UIView *tempView = [view hitTest:point1 withEvent:event];
+            if(tempView){
+                return tempView;
+            }
+        }
+    }else{
+        CGPoint otherPoint = CGPointMake(point.x, point.y + 30);
+        return [self rainHitTest:otherPoint withEvent:event];
+    }
+    return nil;
+}
+
+- (UIView *)rainHitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    
+    for(UIView *subView in [self.subviews reverseObjectEnumerator]){
+        CGPoint clickPoint = [subView convertPoint:point fromView:self];
+        UIView *clickView = [subView hitTest:clickPoint withEvent:event];
+        if(clickView){
+            return clickView;
+        }
+    }
+    return nil;
 }
 
 @end

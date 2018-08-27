@@ -101,7 +101,7 @@
     RainTabBarController *tabVC = [RainTabBarController new];
     tabVC.viewControllers = @[nvc1,nvc2,nvc3,nvc4];
     [tabVC setPlusBlock:^{
-        NSLog(@"123");
+        [self dismissViewControllerAnimated:NO completion:nil];
     }];
     return tabVC;
 }

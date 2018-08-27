@@ -13,14 +13,13 @@
 - (instancetype)initWithFrame:(CGRect)frame name:(NSString *)name{
     if(self = [super initWithFrame:frame]){
         name = @"123";
-        
-        
-        
-        
-        
     }
     return self;
 }
+
+//- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{}
+
+
 
 //- (instancetype)initWithFrame:(CGRect)frame{
 //   return  [self initWithFrame:frame name:@"123"];
