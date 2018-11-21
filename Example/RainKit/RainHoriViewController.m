@@ -13,6 +13,20 @@
 
 @interface RainHoriViewController ()<RainViewConfigProtocol>
 
+@property (nonatomic, strong) NSString *string;
+
+@property (nonatomic, strong) NSArray *arr1;
+
+@property (nonatomic, copy) NSArray *arr2;
+
+@property (nonatomic, strong) NSString *rStr;
+
+@property (nonatomic, copy) NSString *cStr;
+
+@property (nonatomic, copy) NSMutableArray *dataArray;
+
+@property (nonatomic, copy) NSMutableString *mutableString;
+
 @end
 
 @implementation RainHoriViewController
@@ -40,7 +54,50 @@
     layer.strokeEnd = 1;
     layer.strokeStart = 0;
     [view.layer addSublayer:layer];
+    NSDictionary *dict = @{@"sex":@"1",
+                           @"schoolname":@"广西外国语学院",
+                           @"firstmajor":@"ww",
+                           @"secondmajorcode":@"96b4edc6abf211e89a44000c29028ff2",
+                           @"departmentcode":@"749e6cccab6a11e89a44000c29028ff2",
+                           @"cardid":@"www",
+                           @"departmentname":@"国际经济与贸易系",
+                           @"schoolcode":@"1489e61bab5e11e89a44000c29028ff2",
+                           @"telphone":@"我们",
+                           @"sno":@"www",
+                           @"failsubject":@"1",
+                           @"secondmajor":@"国际经济与贸易和金融工程",
+                           @"grade":@"大一",
+                           @"name":@"wq"};
+    NSError *error;
+    NSData *data = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *dataString = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"%@:%@",data,dataString);
+
+    _arr2 = @[@1,@3];
+    _arr2 = @[@3,@1];
+    _arr1 = @[@1,@3];
+    _arr1 = @[@3,@1];
+    NSMutableString *mStr = [NSMutableString stringWithFormat:@"abc"];
+    self.rStr   = mStr;
+    self.cStr     = mStr;
+    NSLog(@"mStr:%p,%p",  mStr,&mStr);
+    NSLog(@"retainStr:%p,%p", _rStr, &_rStr);
+    NSLog(@"copyStr:%p,%p",   _cStr, &_cStr);
     
+    [mStr appendString:@"de"];
+    NSLog(@"retainStr:%@",  _rStr);
+    NSLog(@"copyStr:%@",    _cStr);
+
+    _mutableString = [NSMutableString stringWithFormat:@"abc"];
+    self.rStr   = _mutableString;
+    self.cStr     = _mutableString;
+    NSLog(@"mStr:%p,%p",  _mutableString,&_mutableString);
+    NSLog(@"retainStr:%p,%p", _rStr, &_rStr);
+    NSLog(@"copyStr:%p,%p",   _cStr, &_cStr);
+    
+    [_mutableString appendString:@"de"];
+    NSLog(@"retainStr:%@,%p,%p",  _rStr,_mutableString,&_mutableString);
+    NSLog(@"copyStr:%@",    _cStr);
     
 }
 

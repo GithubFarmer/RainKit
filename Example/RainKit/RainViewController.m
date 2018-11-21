@@ -17,6 +17,7 @@
 #import "RainCenterViewController.h"
 #import "RainLeftViewController.h"
 #import "RainTabBarController.h"
+#import <MMDrawerController/MMDrawerController.h>
 
 @interface RainViewController ()<UITableViewDelegate,UITableViewDataSource,YYModel,RainViewConfigProtocol>
 
@@ -68,11 +69,34 @@
     }else if([dict[@"classVC"] isEqualToString:@"RainHoriViewController"]){
         RainBaseViewController *hNvc = [vc getNavForPresented];
         hNvc.title = vc.title;
-//        [self presentViewController:hNvc animated:NO completion:nil];
-        [self.navigationController pushViewController:vc animated:YES];
+        [self presentViewController:hNvc animated:NO completion:nil];
+//        [self.navigationController pushViewController:vc animated:YES];
     }else if ([dict[@"className"] isEqualToString:@"tabbar"]){
         [self presentViewController:[self setUpRootViewController] animated:YES completion:NULL];
-    }else{
+    }
+    else if([dict[@"classVC"] isEqualToString:@"RainLeftViewController"]){
+        RainLeftViewController *leftVC = [RainLeftViewController new];
+        leftVC.title = @"左边页面";
+        UIViewController *leftNvc = [[UINavigationController alloc]initWithRootViewController:leftVC];
+        RainCenterViewController *centerVC = [RainCenterViewController new];
+        centerVC.title = @"中间页面";
+        UIViewController *centerNvc = [[UINavigationController alloc]initWithRootViewController:centerVC];
+        MMDrawerController *drawVC = [[MMDrawerController alloc]initWithCenterViewController:centerNvc  leftDrawerViewController:leftNvc];
+        drawVC.view.backgroundColor = [UIColor whiteColor];
+        [drawVC setShadowColor:[UIColor blackColor]];
+        [drawVC setShadowOffset:CGSizeMake(50, 50)];
+        [drawVC setShowsShadow:YES];
+        [drawVC setShadowOpacity:0.6];
+        [drawVC setMaximumLeftDrawerWidth:0.6];
+        drawVC.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+        drawVC.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
+        drawVC.maximumLeftDrawerWidth = 300.0;
+        [drawVC setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+            
+        }];
+        [self presentViewController:drawVC animated:NO completion:nil];
+    }
+    else{
         vc.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:vc animated:YES];
     }
@@ -87,6 +111,7 @@
     //    nvc1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_home"];
     nvc1.title = @"家庭";
     RainLeftViewController *leftVC = [RainLeftViewController new];
+    leftVC.selectIndex = 5;
     UINavigationController *nvc2 = [[UINavigationController alloc]initWithRootViewController:leftVC];
     nvc2.tabBarItem.image  = [UIImage imageNamed:@"tabbar_message_center"];
     nvc2.title = @"信心";

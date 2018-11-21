@@ -40,12 +40,11 @@
 
 - (void)resetBackBtn:(UIViewController *)vc{
     
-    UIButton *but = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 80, 44)];
-    but.backgroundColor = [UIColor redColor];
-    [but setTitle:@"返回" forState:UIControlStateNormal];
+    UIButton *but = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 40, 20)];
+    [but setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
     [but addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:but];
-//    vc.navigationItem.leftBarButtonItem = leftBarButtonItem;
+    vc.navigationItem.leftBarButtonItem = leftBarButtonItem;
     vc.backItem = leftBarButtonItem;
 }
 

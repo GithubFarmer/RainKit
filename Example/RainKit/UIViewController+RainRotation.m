@@ -11,7 +11,7 @@
 @implementation UIViewController (RainRotation)
 
 - (BOOL)shouldAutorotate{
-    return NO;
+    return YES;
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations{

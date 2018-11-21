@@ -681,8 +681,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "37b78e25-3b21-4b47-8563-a9f9467efc39";
-				PROVISIONING_PROFILE_SPECIFIER = "AppStoreDevelopment *";
+				PROVISIONING_PROFILE = "21db7ade-049e-4b83-a5dd-e0c25dc8dbcc";
+				PROVISIONING_PROFILE_SPECIFIER = "Development *";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -700,8 +700,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "37b78e25-3b21-4b47-8563-a9f9467efc39";
-				PROVISIONING_PROFILE_SPECIFIER = "AppStoreDevelopment *";
+				PROVISIONING_PROFILE = "21db7ade-049e-4b83-a5dd-e0c25dc8dbcc";
+				PROVISIONING_PROFILE_SPECIFIER = "Development *";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -44,5 +44,11 @@
 		<key>classVC</key>
 		<string>RainLoginViewController</string>
 	</dict>
+	<dict>
+		<key>className</key>
+		<string>抽屉模式下左右滑动</string>
+		<key>classVC</key>
+		<string>RainLeftViewController</string>
+	</dict>
 </array>
 </plist>

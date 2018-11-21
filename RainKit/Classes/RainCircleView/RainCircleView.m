@@ -73,8 +73,8 @@ static CGFloat const LINE_WIDTH = 40.f;
         if(_isAnimation){
             CABasicAnimation *anima = [CABasicAnimation animationWithKeyPath:@"strokeStart"];
             anima.duration = 0.15f;
-            anima.fromValue = @0;
-            anima.toValue = @1;
+//            anima.fromValue = @0;
+//            anima.toValue = @1;
             [shapeLayer addAnimation:anima forKey:@"strokeStart"];
         }
         

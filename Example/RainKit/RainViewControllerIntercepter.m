@@ -57,7 +57,7 @@
     if([viewController respondsToSelector:@selector(isLandScape)]){
         islandScape = [(UIViewController <RainViewConfigProtocol> *)viewController isLandScape];
     }
-    viewController.view.backgroundColor = islandScape ? [UIColor yellowColor] : [UIColor whiteColor];
+    viewController.view.backgroundColor = islandScape ? [UIColor yellowColor] : [UIColor redColor];
     viewController.extendedLayoutIncludesOpaqueBars = YES;
     viewController.modalPresentationCapturesStatusBarAppearance = NO;
     viewController.automaticallyAdjustsScrollViewInsets = NO;

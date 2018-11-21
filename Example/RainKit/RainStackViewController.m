@@ -36,6 +36,7 @@
 //    UIStackViewAlignmentTrailing,
 //    UIStackViewAlignmentBottom = UIStackViewAlignmentTrailing,
 //    UIStackViewAlignmentLastBaseline,
+    //stackView的对齐方式
     self.stackView.alignment = UIStackViewAlignmentFill;
     
     //    UIStackViewDistributionFill = 0,
@@ -78,32 +79,36 @@
         make.right.mas_equalTo(-20);
         make.size.bottom.equalTo(leftBtn);
     }];
-    
-    NSArray *arr = @[[UIColor redColor],
-                     [UIColor blueColor],
-                     [UIColor greenColor]];
+
     for(int i = 0; i < 5; i++){
         UIView *view = [[UIView alloc] init];
-        view.backgroundColor = arr[arc4random()%3];
+        view.backgroundColor = [self randColor];
         [self.stackView addArrangedSubview:view];
     }
-    _views = [NSMutableArray arrayWithArray:self.stackView.subviews];
+}
 
-    
+- (UIColor *)randColor{
+    UIColor *color = [UIColor colorWithRed:rand()%225/225.0 green:rand()%225/225.0 blue:rand()%225/225.0 alpha:1];
+    return color;
 }
 
 - (void)deleteAction{
-    [self.stackView removeArrangedSubview:self.stackView.subviews.lastObject];
-//    [UIView animateWithDuration:0.2 animations:^{
-//        [self.stackView layoutIfNeeded];
-//    }];
-  _views = [NSMutableArray arrayWithArray:self.stackView.subviews];
+    [self.stackView insertArrangedSubview:self.stackView.subviews.lastObject atIndex:0];
+    [UIView animateWithDuration:0.2 animations:^{
+        [self.stackView layoutIfNeeded];
+    }];
 }
 
 - (void)addClick{
     UIView *view = [[UIView alloc] init];
-    view.backgroundColor = [UIColor yellowColor];
-    [self.stackView addArrangedSubview:view];
+    view.backgroundColor = [self randColor];
+    
+    NSInteger num = rand()%10;
+    if(num%2){
+        [self.stackView addArrangedSubview:view];
+    }else{
+        [self.stackView insertArrangedSubview:self.stackView.subviews.lastObject atIndex:0];
+    }
     [UIView animateWithDuration:0.2 animations:^{
         [self.stackView layoutIfNeeded];
     }];

@@ -10,4 +10,6 @@
 
 @interface RainLeftViewController : UIViewController
 
+@property (nonatomic, assign) NSInteger selectIndex;
+
 @end
