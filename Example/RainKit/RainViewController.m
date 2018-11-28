@@ -18,6 +18,8 @@
 #import "RainLeftViewController.h"
 #import "RainTabBarController.h"
 #import <MMDrawerController/MMDrawerController.h>
+#import "RainTransitionAnnitionNavigationController.h"
+#import "RainAnnimationViewController.h"
 
 @interface RainViewController ()<UITableViewDelegate,UITableViewDataSource,YYModel,RainViewConfigProtocol>
 
@@ -96,6 +98,10 @@
         }];
         [self presentViewController:drawVC animated:NO completion:nil];
     }
+//    else if([dict[@"classVC"] isEqualToString:@"RainAnnimationViewController"]){
+//        RainTransitionAnnitionNavigationController *transitionVC = [[RainTransitionAnnitionNavigationController alloc]initWithRootViewController:[RainAnnimationViewController new]];
+//        [self.navigationController pushViewController:transitionVC animated:YES];
+//    }
     else{
         vc.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:vc animated:YES];

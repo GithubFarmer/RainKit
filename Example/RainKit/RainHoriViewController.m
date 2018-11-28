@@ -106,18 +106,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-//
-//- (BOOL)isFullScreenMode{
-//    return YES;
-//}
-//
-//- (BOOL)shouldAutorotate{
-//    return YES;
-//}
-//
-//- (BOOL)isLandScape{
-//    return YES;
-//}
+
+- (BOOL)isFullScreenMode{
+    return YES;
+}
+
+- (BOOL)shouldAutorotate{
+    return YES;
+}
+
+- (BOOL)isLandScape{
+    return NO;
+}
 
 //iOS9以后，状态丢失的情况
 - (BOOL)prefersStatusBarHidden{

@@ -50,5 +50,17 @@
 		<key>classVC</key>
 		<string>RainLeftViewController</string>
 	</dict>
+	<dict>
+		<key>className</key>
+		<string>蓝牙连接</string>
+		<key>classVC</key>
+		<string>RainBlueToothViewController</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>转场动画</string>
+		<key>classVC</key>
+		<string>RainAnnimationViewController</string>
+	</dict>
 </array>
 </plist>

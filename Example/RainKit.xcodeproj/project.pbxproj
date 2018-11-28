@@ -34,15 +34,29 @@
 		AE65BBB820AEA89E0050CFE1 /* RainMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE65BBB720AEA89E0050CFE1 /* RainMasonryViewController.m */; };
 		AE6B174F2089E38B005DC65E /* RainCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B174E2089E38B005DC65E /* RainCenterViewController.m */; };
 		AE6B17522089E396005DC65E /* RainLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6B17512089E396005DC65E /* RainLeftViewController.m */; };
+		AE8754F321ACDCC500BCD13C /* RainAnnimation_two_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8754F221ACDCC500BCD13C /* RainAnnimation_two_ViewController.m */; };
+		AE8754F621ACDCE800BCD13C /* RainTransitionAnnimationTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8754F521ACDCE800BCD13C /* RainTransitionAnnimationTwo.m */; };
+		AE8754F921AD167300BCD13C /* RainTransitionInteractiveTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8754F821AD167300BCD13C /* RainTransitionInteractiveTwo.m */; };
 		AE8AF4192051119F00FD1B8E /* RainKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE8AF4182051119F00FD1B8E /* RainKit.plist */; };
 		AE95EAF82080ABF20065A6D9 /* SADevice.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95EAF62080ABF10065A6D9 /* SADevice.m */; };
 		AE95EAFB2080AECB0065A6D9 /* SAWifiHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AE95EAFA2080AECB0065A6D9 /* SAWifiHelper.m */; };
 		AE9A7E4C2069F3BF008DF406 /* RainModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9A7E4B2069F3BF008DF406 /* RainModelViewController.m */; };
+		AEA1B5D021ABCBA500058836 /* RainBlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1B5CB21ABCBA400058836 /* RainBlueToothViewController.m */; };
+		AEA1B5D121ABCBA500058836 /* RainAnnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1B5CD21ABCBA500058836 /* RainAnnimationViewController.m */; };
+		AEA1B5D821ABCF4200058836 /* RainAnnimation_one_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1B5D721ABCF4200058836 /* RainAnnimation_one_ViewController.m */; };
+		AEA1B5DB21ABDDF100058836 /* RainTransitionAnnimationOne.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1B5DA21ABDDF100058836 /* RainTransitionAnnimationOne.m */; };
+		AEA1B5DF21ABDFF100058836 /* RainTransitionAnnitionNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1B5DE21ABDFF100058836 /* RainTransitionAnnitionNavigationController.m */; };
+		AEA1B5E221ABE33500058836 /* UIScrollView+RainGestureConflict.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA1B5E121ABE33500058836 /* UIScrollView+RainGestureConflict.m */; };
 		AEA4D27B20F2F0BB007A96AC /* RainHoriViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA4D27A20F2F0BB007A96AC /* RainHoriViewController.m */; };
 		AEA4D28220F2FCFE007A96AC /* RainViewControllerIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA4D28120F2FCFE007A96AC /* RainViewControllerIntercepter.m */; };
 		AEA4D28520F30F2D007A96AC /* UIViewController+RainRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA4D28420F30F2D007A96AC /* UIViewController+RainRotation.m */; };
 		AEA4D28820F350D4007A96AC /* UIViewController+RainNav.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA4D28720F350D4007A96AC /* UIViewController+RainNav.m */; };
 		AEA4D28B20F354CA007A96AC /* RainBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA4D28A20F354CA007A96AC /* RainBaseViewController.m */; };
+		AEA635F121AE335E00A57408 /* RainAnnimation_Three_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA635F021AE335E00A57408 /* RainAnnimation_Three_ViewController.m */; };
+		AEA635F421AE346200A57408 /* RainTransitionAnnimationThree.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA635F321AE346200A57408 /* RainTransitionAnnimationThree.m */; };
+		AEA635F721AE5EA300A57408 /* RainAnnimation_Four_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA635F621AE5EA300A57408 /* RainAnnimation_Four_ViewController.m */; };
+		AEA635FA21AE5FDB00A57408 /* RainAnnimation_Five_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA635F921AE5FDB00A57408 /* RainAnnimation_Five_ViewController.m */; };
+		AEA635FD21AE622E00A57408 /* RainTransitionAnnimationFour.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA635FC21AE622E00A57408 /* RainTransitionAnnimationFour.m */; };
 		F7C27AE7015D699348219676 /* Pods_RainKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25562630156B088BED90373B /* Pods_RainKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +120,12 @@
 		AE6B174E2089E38B005DC65E /* RainCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainCenterViewController.m; sourceTree = "<group>"; };
 		AE6B17502089E396005DC65E /* RainLeftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainLeftViewController.h; sourceTree = "<group>"; };
 		AE6B17512089E396005DC65E /* RainLeftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainLeftViewController.m; sourceTree = "<group>"; };
+		AE8754F121ACDCC500BCD13C /* RainAnnimation_two_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainAnnimation_two_ViewController.h; sourceTree = "<group>"; };
+		AE8754F221ACDCC500BCD13C /* RainAnnimation_two_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainAnnimation_two_ViewController.m; sourceTree = "<group>"; };
+		AE8754F421ACDCE800BCD13C /* RainTransitionAnnimationTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainTransitionAnnimationTwo.h; sourceTree = "<group>"; };
+		AE8754F521ACDCE800BCD13C /* RainTransitionAnnimationTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainTransitionAnnimationTwo.m; sourceTree = "<group>"; };
+		AE8754F721AD167300BCD13C /* RainTransitionInteractiveTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainTransitionInteractiveTwo.h; sourceTree = "<group>"; };
+		AE8754F821AD167300BCD13C /* RainTransitionInteractiveTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainTransitionInteractiveTwo.m; sourceTree = "<group>"; };
 		AE8AF4182051119F00FD1B8E /* RainKit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RainKit.plist; sourceTree = "<group>"; };
 		AE95EAF62080ABF10065A6D9 /* SADevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SADevice.m; sourceTree = "<group>"; };
 		AE95EAF72080ABF10065A6D9 /* SADevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SADevice.h; sourceTree = "<group>"; };
@@ -113,6 +133,18 @@
 		AE95EAFA2080AECB0065A6D9 /* SAWifiHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAWifiHelper.m; sourceTree = "<group>"; };
 		AE9A7E4A2069F3BF008DF406 /* RainModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainModelViewController.h; sourceTree = "<group>"; };
 		AE9A7E4B2069F3BF008DF406 /* RainModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainModelViewController.m; sourceTree = "<group>"; };
+		AEA1B5CB21ABCBA400058836 /* RainBlueToothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainBlueToothViewController.m; sourceTree = "<group>"; };
+		AEA1B5CC21ABCBA500058836 /* RainBlueToothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainBlueToothViewController.h; sourceTree = "<group>"; };
+		AEA1B5CD21ABCBA500058836 /* RainAnnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainAnnimationViewController.m; sourceTree = "<group>"; };
+		AEA1B5CE21ABCBA500058836 /* RainAnnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainAnnimationViewController.h; sourceTree = "<group>"; };
+		AEA1B5D621ABCF4200058836 /* RainAnnimation_one_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainAnnimation_one_ViewController.h; sourceTree = "<group>"; };
+		AEA1B5D721ABCF4200058836 /* RainAnnimation_one_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainAnnimation_one_ViewController.m; sourceTree = "<group>"; };
+		AEA1B5D921ABDDF100058836 /* RainTransitionAnnimationOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainTransitionAnnimationOne.h; sourceTree = "<group>"; };
+		AEA1B5DA21ABDDF100058836 /* RainTransitionAnnimationOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainTransitionAnnimationOne.m; sourceTree = "<group>"; };
+		AEA1B5DD21ABDFF100058836 /* RainTransitionAnnitionNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainTransitionAnnitionNavigationController.h; sourceTree = "<group>"; };
+		AEA1B5DE21ABDFF100058836 /* RainTransitionAnnitionNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainTransitionAnnitionNavigationController.m; sourceTree = "<group>"; };
+		AEA1B5E021ABE33500058836 /* UIScrollView+RainGestureConflict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+RainGestureConflict.h"; sourceTree = "<group>"; };
+		AEA1B5E121ABE33500058836 /* UIScrollView+RainGestureConflict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+RainGestureConflict.m"; sourceTree = "<group>"; };
 		AEA4D27920F2F0BB007A96AC /* RainHoriViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainHoriViewController.h; sourceTree = "<group>"; };
 		AEA4D27A20F2F0BB007A96AC /* RainHoriViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainHoriViewController.m; sourceTree = "<group>"; };
 		AEA4D27C20F2F9FA007A96AC /* RainViewConfigProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainViewConfigProtocol.h; sourceTree = "<group>"; };
@@ -124,6 +156,16 @@
 		AEA4D28720F350D4007A96AC /* UIViewController+RainNav.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RainNav.m"; sourceTree = "<group>"; };
 		AEA4D28920F354C9007A96AC /* RainBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainBaseViewController.h; sourceTree = "<group>"; };
 		AEA4D28A20F354CA007A96AC /* RainBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainBaseViewController.m; sourceTree = "<group>"; };
+		AEA635EF21AE335E00A57408 /* RainAnnimation_Three_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainAnnimation_Three_ViewController.h; sourceTree = "<group>"; };
+		AEA635F021AE335E00A57408 /* RainAnnimation_Three_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainAnnimation_Three_ViewController.m; sourceTree = "<group>"; };
+		AEA635F221AE346200A57408 /* RainTransitionAnnimationThree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainTransitionAnnimationThree.h; sourceTree = "<group>"; };
+		AEA635F321AE346200A57408 /* RainTransitionAnnimationThree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainTransitionAnnimationThree.m; sourceTree = "<group>"; };
+		AEA635F521AE5EA300A57408 /* RainAnnimation_Four_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainAnnimation_Four_ViewController.h; sourceTree = "<group>"; };
+		AEA635F621AE5EA300A57408 /* RainAnnimation_Four_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainAnnimation_Four_ViewController.m; sourceTree = "<group>"; };
+		AEA635F821AE5FDB00A57408 /* RainAnnimation_Five_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainAnnimation_Five_ViewController.h; sourceTree = "<group>"; };
+		AEA635F921AE5FDB00A57408 /* RainAnnimation_Five_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainAnnimation_Five_ViewController.m; sourceTree = "<group>"; };
+		AEA635FB21AE622E00A57408 /* RainTransitionAnnimationFour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainTransitionAnnimationFour.h; sourceTree = "<group>"; };
+		AEA635FC21AE622E00A57408 /* RainTransitionAnnimationFour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainTransitionAnnimationFour.m; sourceTree = "<group>"; };
 		B2D1B66D76E0C5806F239743 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B9EABD6CB6D9C7F07DFD9E07 /* Pods-RainKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainKit_Example/Pods-RainKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DE9FD4EB5CF0C49D70F01AE7 /* Pods_RainKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +264,16 @@
 				AE4E82BE20871638007EB816 /* RainSingleView.m */,
 				AE9A7E4A2069F3BF008DF406 /* RainModelViewController.h */,
 				AE9A7E4B2069F3BF008DF406 /* RainModelViewController.m */,
+				AEA1B5DC21ABDFA900058836 /* AnnimationCommon */,
+				AEA1B5D521ABCF1400058836 /* Annimation5 */,
+				AEA1B5D421ABCF0500058836 /* Annimation4 */,
+				AEA1B5D321ABCEF800058836 /* Annimation3 */,
+				AEA1B5D221ABCEE900058836 /* Annimation2 */,
+				AEA1B5CF21ABCBA500058836 /* Annimation1 */,
+				AEA1B5CE21ABCBA500058836 /* RainAnnimationViewController.h */,
+				AEA1B5CD21ABCBA500058836 /* RainAnnimationViewController.m */,
+				AEA1B5CC21ABCBA500058836 /* RainBlueToothViewController.h */,
+				AEA1B5CB21ABCBA400058836 /* RainBlueToothViewController.m */,
 				AE65BBB620AEA89E0050CFE1 /* RainMasonryViewController.h */,
 				AE65BBB720AEA89E0050CFE1 /* RainMasonryViewController.m */,
 				AEA4D27920F2F0BB007A96AC /* RainHoriViewController.h */,
@@ -294,6 +346,72 @@
 				06E44A9ED4E6FE5881DB8001 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		AEA1B5CF21ABCBA500058836 /* Annimation1 */ = {
+			isa = PBXGroup;
+			children = (
+				AEA1B5D621ABCF4200058836 /* RainAnnimation_one_ViewController.h */,
+				AEA1B5D721ABCF4200058836 /* RainAnnimation_one_ViewController.m */,
+				AEA1B5D921ABDDF100058836 /* RainTransitionAnnimationOne.h */,
+				AEA1B5DA21ABDDF100058836 /* RainTransitionAnnimationOne.m */,
+			);
+			path = Annimation1;
+			sourceTree = "<group>";
+		};
+		AEA1B5D221ABCEE900058836 /* Annimation2 */ = {
+			isa = PBXGroup;
+			children = (
+				AE8754F121ACDCC500BCD13C /* RainAnnimation_two_ViewController.h */,
+				AE8754F221ACDCC500BCD13C /* RainAnnimation_two_ViewController.m */,
+				AE8754F421ACDCE800BCD13C /* RainTransitionAnnimationTwo.h */,
+				AE8754F521ACDCE800BCD13C /* RainTransitionAnnimationTwo.m */,
+				AE8754F721AD167300BCD13C /* RainTransitionInteractiveTwo.h */,
+				AE8754F821AD167300BCD13C /* RainTransitionInteractiveTwo.m */,
+			);
+			path = Annimation2;
+			sourceTree = "<group>";
+		};
+		AEA1B5D321ABCEF800058836 /* Annimation3 */ = {
+			isa = PBXGroup;
+			children = (
+				AEA635EF21AE335E00A57408 /* RainAnnimation_Three_ViewController.h */,
+				AEA635F021AE335E00A57408 /* RainAnnimation_Three_ViewController.m */,
+				AEA635F221AE346200A57408 /* RainTransitionAnnimationThree.h */,
+				AEA635F321AE346200A57408 /* RainTransitionAnnimationThree.m */,
+			);
+			path = Annimation3;
+			sourceTree = "<group>";
+		};
+		AEA1B5D421ABCF0500058836 /* Annimation4 */ = {
+			isa = PBXGroup;
+			children = (
+				AEA635F521AE5EA300A57408 /* RainAnnimation_Four_ViewController.h */,
+				AEA635F621AE5EA300A57408 /* RainAnnimation_Four_ViewController.m */,
+				AEA635FB21AE622E00A57408 /* RainTransitionAnnimationFour.h */,
+				AEA635FC21AE622E00A57408 /* RainTransitionAnnimationFour.m */,
+			);
+			path = Annimation4;
+			sourceTree = "<group>";
+		};
+		AEA1B5D521ABCF1400058836 /* Annimation5 */ = {
+			isa = PBXGroup;
+			children = (
+				AEA635F821AE5FDB00A57408 /* RainAnnimation_Five_ViewController.h */,
+				AEA635F921AE5FDB00A57408 /* RainAnnimation_Five_ViewController.m */,
+			);
+			path = Annimation5;
+			sourceTree = "<group>";
+		};
+		AEA1B5DC21ABDFA900058836 /* AnnimationCommon */ = {
+			isa = PBXGroup;
+			children = (
+				AEA1B5DD21ABDFF100058836 /* RainTransitionAnnitionNavigationController.h */,
+				AEA1B5DE21ABDFF100058836 /* RainTransitionAnnitionNavigationController.m */,
+				AEA1B5E021ABE33500058836 /* UIScrollView+RainGestureConflict.h */,
+				AEA1B5E121ABE33500058836 /* UIScrollView+RainGestureConflict.m */,
+			);
+			path = AnnimationCommon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -524,19 +642,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA1B5D121ABCBA500058836 /* RainAnnimationViewController.m in Sources */,
+				AEA1B5D021ABCBA500058836 /* RainBlueToothViewController.m in Sources */,
 				AEA4D28520F30F2D007A96AC /* UIViewController+RainRotation.m in Sources */,
+				AE8754F321ACDCC500BCD13C /* RainAnnimation_two_ViewController.m in Sources */,
 				AE95EAFB2080AECB0065A6D9 /* SAWifiHelper.m in Sources */,
 				6003F59E195388D20070C39A /* RainAppDelegate.m in Sources */,
 				AE4E82BF20871638007EB816 /* RainSingleView.m in Sources */,
 				AE4AD782212CF13A00699E37 /* RainLoginView.m in Sources */,
 				6003F5A7195388D20070C39A /* RainViewController.m in Sources */,
+				AE8754F621ACDCE800BCD13C /* RainTransitionAnnimationTwo.m in Sources */,
 				AE9A7E4C2069F3BF008DF406 /* RainModelViewController.m in Sources */,
+				AEA1B5DB21ABDDF100058836 /* RainTransitionAnnimationOne.m in Sources */,
+				AEA635F721AE5EA300A57408 /* RainAnnimation_Four_ViewController.m in Sources */,
 				AEA4D28820F350D4007A96AC /* UIViewController+RainNav.m in Sources */,
+				AEA635F121AE335E00A57408 /* RainAnnimation_Three_ViewController.m in Sources */,
 				AE4AD77F212CF12600699E37 /* RainLoginViewController.m in Sources */,
 				AEA4D28B20F354CA007A96AC /* RainBaseViewController.m in Sources */,
+				AE8754F921AD167300BCD13C /* RainTransitionInteractiveTwo.m in Sources */,
 				AE6B174F2089E38B005DC65E /* RainCenterViewController.m in Sources */,
+				AEA635F421AE346200A57408 /* RainTransitionAnnimationThree.m in Sources */,
+				AEA635FD21AE622E00A57408 /* RainTransitionAnnimationFour.m in Sources */,
 				AE4AD785212D5CE500699E37 /* RainTabBar.m in Sources */,
 				AEA4D27B20F2F0BB007A96AC /* RainHoriViewController.m in Sources */,
+				AEA635FA21AE5FDB00A57408 /* RainAnnimation_Five_ViewController.m in Sources */,
 				AE5EF9D620F47480008A1D06 /* RainProtocolTestViewController.m in Sources */,
 				AE65BBB820AEA89E0050CFE1 /* RainMasonryViewController.m in Sources */,
 				AEA4D28220F2FCFE007A96AC /* RainViewControllerIntercepter.m in Sources */,
@@ -544,8 +673,11 @@
 				AE6B17522089E396005DC65E /* RainLeftViewController.m in Sources */,
 				AE4E82BC2086E5A2007EB816 /* NSString+RainKit.m in Sources */,
 				AE4AD788212D615D00699E37 /* RainTabBarController.m in Sources */,
+				AEA1B5E221ABE33500058836 /* UIScrollView+RainGestureConflict.m in Sources */,
 				AE95EAF82080ABF20065A6D9 /* SADevice.m in Sources */,
+				AEA1B5DF21ABDFF100058836 /* RainTransitionAnnitionNavigationController.m in Sources */,
 				AE53AF0321198CFF004450E7 /* RainStackViewController.m in Sources */,
+				AEA1B5D821ABCF4200058836 /* RainAnnimation_one_ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

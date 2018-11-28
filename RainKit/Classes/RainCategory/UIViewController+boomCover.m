@@ -133,7 +133,7 @@ UIView *_effectView;
     [self addChildViewController:coverVC];
     [coverVC didMoveToParentViewController:self];
     self.coverController = coverVC;
-    [self boom_showCoverController:coverVC startView:startView completion:block];
+    [self boom_showCoverView:coverVC.view startView:startView completion:block];
 }
 
 

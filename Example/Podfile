@@ -1,6 +1,7 @@
 use_frameworks!
 
 inhibit_all_warnings!
+#设置一个声明的pods集，注意在命名的时候需用share开头
 def share_RainKit_pods
     pod 'MMDrawerController'
     pod 'SDWebImage', '~> 4.2.3'
