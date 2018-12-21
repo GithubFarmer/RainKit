@@ -57,7 +57,6 @@
     scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * 3, scrollView.frame.size.height);
     [self.view addSubview:scrollView];
     
-    
     //获取系统自带滑动手势的target对象
     id target = self.navigationController.interactivePopGestureRecognizer.delegate;
     //创建全屏滑动手势，调用系统自带滑动手势的target的action方法
